@@ -203,7 +203,7 @@ function Projects() {
 					
 				</Flex >
 			</Flex>
-			<LinkRouter to='/portfolio/contact'>
+			<LinkRouter to='/contact'>
 				<Flex w={'100%'} justifyContent='center' h={'auto'} overflowY='hidden' mb={'40px'}>
 					<Image  src={LetsWorkTogether} h={'auto'} w={['100%','55%']}  alt='Dan Abramov' 
 						sx={{ transform: 'scale(0.9)', '&:hover': { transform: 'scale(1.0)', filter: 'hue-rotate(-40deg)'}, transition:'0.2s' }} />

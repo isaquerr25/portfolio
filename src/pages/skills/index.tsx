@@ -35,23 +35,25 @@ function Skills() {
 				<Circle size='450px' bg='radial-gradient(37.26% 37.26% at 50% 50%, rgba(170, 20, 240, 0.31) 0%, rgba(170, 20, 240, 0) 100%)' color='white'/>
 			</Box>
 			<Flex flexDirection={['column','row']} w='99vw' justifyContent={['center','space-between']} alignItems='flex-start'>
-				<Flex w={'100%'} flexDirection='column' justifyContent='space-between' mt={'10px'}>
-					<Image src={ImgSkills} h={['80px','130px']}  w={['200px','300px']} mt={['33px','100px']} ml={['25px','33px']} alt='Dan Abramov' />
+				<Flex w={['100%','50vw']} flexDirection='column' justifyContent='space-between' mt={'10px'}>
+					<Image src={ImgSkills} h={['80px','7vw']}  w={['200px','18vw']} mt={['33px','0px']} ml={['25px','33px']} alt='Dan Abramov' />
 				
 
 			
 					<Flex ml={['25px','33px']} w={['93%','50vw']} flexDirection={'column'} gap={'10px'}>
 						
 						
-						<Text fontSize={['lg','xl']} display='inline-block'  gap={'2px'}
+						<Text fontSize={['lg','2vw']} display='inline-block'  gap={'2px'}
 							alignItems={'flex-start'} justifyContent={'flex-start'} 
-							w={['100%','100%']} color={'#20E2EE'}>
+							w={['100%','100%']} color={'#20E2EE'}
+							fontWeight={'bold'}
+						>
 							{'<'} 
 							<Text  display='inline-block'  textShadow={'4xl'} pl={['5px','20px']}>
                                 Experience<br/>
                                 value={'{'}
 								<Text as={'span'} color={'#EDFF7B'} >{'`'}</Text>
-								<Flex fontSize={['sm','xl']} ml={['5px','20px']} pr={['5px','1px']}>
+								<Flex fontSize={['sm','1.5vw']} ml={['5px','20px']} pr={['5px','1px']}>
 
 								
 									<Text as={'span'} color={'#EDFF7B'} >
@@ -96,54 +98,54 @@ function Skills() {
 					</Flex>
 				</Flex>
 			
-				<Box display={'flex'} flexDirection='column' alignItems={'center'} justifyContent={'center'}  w={'100%'}>
-					<Image src={ImgHead} h={'150px'} w='150px' mt={'0px'} mb='50px' alt='Head' />
+				<Box  display={'flex'} flexDirection='column' alignItems={'center'} justifyContent={'center'}  w={['100%','50vw']}>
+					<Image src={ImgHead} h={['200px','15vw']} w={['200px','15vw']} mt={'0px'} mb={['50px','5px']} alt='Head' />
 					<Flex flexDirection={'column'} gap={'10px'}>
-						<Flex flexDirection={'column'} gap={'10px'}>
-							<Flex w={['310px']} alignItems='center'  flexDirection={'column'} gap={'2px'} >
-								<Flex w={'100%'} justifyContent={'space-between'} alignItems={'end'}>
-									<Image src={ImgJs} h={'80px'} />
-									<Image src={ImgTs} h={'65px'} mt='15px'/>
-									<Image src={ImgCss} h={'80px'} />
-									<Image src={ImgReact} h={'65px'} mt='15px' />
+						<Flex flexDirection={'column'} gap={'10px'} px='5%'>
+							<Flex w={'100%'} px='5%' alignItems='center'  flexDirection={'column'} gap={'2px'} >
+								<Flex w={['100%','30vw']} justifyContent={'space-between'} alignItems={'end'}>
+									<Image src={ImgJs} h={['80px','7vw']} />
+									<Image src={ImgTs} h={['65px','5.5vw']} mt='15px'/>
+									<Image src={ImgCss} h={['80px','7vw']} />
+									<Image src={ImgReact} h={['65px','5.5vw']} mt='15px' />
 								</Flex>
 								<Image src={ImgUnderLine} h={'5px'} w={'100%'}/>
 							</Flex>
-							<Flex w={'310px'} alignItems='center'  flexDirection={'column'} gap={'2px'} >
-								<Flex w={'100%'} justifyContent={'space-between'} alignItems={'end'}>
-									<Image src={ImgNext} h={'65px'} />
-									<Image src={ImgDjango} h={'65px'} />
-									<Image src={ImgPython} h={'65px'} />
+							<Flex w={'100%'} alignItems='center'  flexDirection={'column'} gap={'2px'} >
+								<Flex w={['100%','30vw']} justifyContent={'space-between'} alignItems={'end'}>
+									<Image src={ImgNext} h={['65px','5.5vw']} />
+									<Image src={ImgDjango} h={['65px','5.5vw']} />
+									<Image src={ImgPython} h={['65px','5.5vw']} />
 								</Flex>
 								<Image src={ImgUnderLine} h={'5px'} w={'100%'}/>
 							</Flex>
-							<Flex w={'310px'} alignItems='center'  flexDirection={'column'} gap={'2px'} >
-								<Flex w={'100%'} justifyContent={'space-between'} alignItems={'end'}>
-									<Image src={ImgPrisma} h={'65px'} />
-									<Image src={ImgUnity} h={'65px'} />
-									<Image src={ImgGraphql} h={'65px'} />
-									<Image src={ImgNode} h={'65px'} />
+							<Flex w={'100%'} alignItems='center'  flexDirection={'column'} gap={'2px'} >
+								<Flex w={['100%','30vw']} justifyContent={'space-between'} alignItems={'end'}>
+									<Image src={ImgPrisma} h={['65px','5.5vw']} />
+									<Image src={ImgUnity} h={['65px','5.5vw']} />
+									<Image src={ImgGraphql} h={['65px','5.5vw']} />
+									<Image src={ImgNode} h={['65px','5.5vw']} />
 								</Flex>
 								<Image src={ImgUnderLine} h={'5px'} w={'100%'}/>
 							</Flex>
-							<Flex w={'310px'} alignItems='center'  flexDirection={'column'} gap={'2px'} >
-								<Flex w={'100%'} justifyContent={'space-between'} alignItems={'end'}>
-									<Image src={ImgMongo} h={'65px'} />
-									<Image src={ImgDocker} h={'65px'} />
-									<Image src={ImgPost} h={'65px'} />
-									<Image src={ImgApollo} h={'65px'} />
+							<Flex w={'100%'} px='5%' alignItems='center'  flexDirection={'column'} gap={'2px'} >
+								<Flex  w={['100%','30vw']}justifyContent={'space-between'} alignItems={'end'}>
+									<Image src={ImgMongo} h={['65px','5.5vw']} />
+									<Image src={ImgDocker} h={['65px','5.5vw']} />
+									<Image src={ImgPost} h={['65px','5.5vw']} />
+									<Image src={ImgApollo} h={['65px','5.5vw']} />
 								</Flex>
 								<Image src={ImgUnderLine} h={'5px'} w={'100%'}/>
 							</Flex>
-							<Flex w={'310px'} alignItems='center'  flexDirection={'column'} gap={'2px'}>
-								<Text color={'#EDFF7B'} fontWeight='bold'>
+							<Flex w={'100%'} alignItems='center'  flexDirection={'column'} gap={'2px'} px='10%' >
+								<Text color={'#EDFF7B'} fontSize={['lg','2vw']} fontWeight='bold'>
 									LANGUAGES
 								</Text>
 								<Flex flexDirection={'row'} justifyContent={'space-between'} w={'100%'}>
 								
-									<Image src={ImgBr} h={'200px'} />
-									<Image src={ImgEua} h={'200px'} />
-									<Image src={ImgJp} h={'200px'} />
+									<Image src={ImgBr} h={['200px','12vw']} />
+									<Image src={ImgEua} h={['200px','12vw']} />
+									<Image src={ImgJp} h={['200px','12vw']} />
                             
 								</Flex>
 								<Image src={ImgUnderLine} h={'5px'} w={'100%'}/>
