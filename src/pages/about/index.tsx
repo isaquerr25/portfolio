@@ -5,8 +5,6 @@ import ImgAboutMe from '../../images/aboutMe.png';
 import ImgViolin from '../../images/violinSheme.png';
 import ImgMonkey from '../../images/mokey.png';
 
-
-import { CirclePurple } from '../../components/circle';
 function About() {
 	return (
 		<Flex className="Skills" flexDirection={'column'} overflowX={'hidden'}  position='relative'  w='100vw' >
