@@ -27,85 +27,85 @@ import { CirclePurple } from '../../components/circle';
 function Skills() {
 
 	return (
-		<Flex className="Home" flexDirection={'column'} mb={'30px'}>
+		<Flex className="Home" flexDirection={'column'} mb={'30px'}   position='relative'  w='100vw' >
+			<Box position={'absolute'} left={'-200px'}  top={'50px'} zIndex={'5'}>
+				<Circle size='500px' bg='radial-gradient(37.26% 37.26% at 50% 50%, rgba(170, 20, 240, 0.31) 0%, rgba(170, 20, 240, 0) 100%)' color='white'/>
+			</Box>
 			<Box position={'absolute'} right={'150px'}  top={'-80px'} zIndex={'-5'}>
 				<Circle size='450px' bg='radial-gradient(37.26% 37.26% at 50% 50%, rgba(170, 20, 240, 0.31) 0%, rgba(170, 20, 240, 0) 100%)' color='white'/>
 			</Box>
-			<Flex w={'100%'} justifyContent='space-between' mt={'10px'}>
-				<Image src={ImgSkills} h={'130px'} mt={'33px'} ml={'33px'} alt='Dan Abramov' />
-				<Image src={ImgHead} h={'150px'} mt={'33px'} mr={'300px'} alt='Dan Abramov' />
-
-			</Flex>
-			
-			<Flex w='99vw' justifyContent={'space-between'}>
+			<Flex flexDirection={['column','row']} w='99vw' justifyContent={['center','space-between']} alignItems='flex-start'>
+				<Flex w={'100%'} flexDirection='column' justifyContent='space-between' mt={'10px'}>
+					<Image src={ImgSkills} h={['80px','130px']}  w={['200px','300px']} mt={['33px','100px']} ml={['25px','33px']} alt='Dan Abramov' />
 				
 
-
-				<Flex ml={'33px'} w={'80vw'} flexDirection={'column'} gap={'10px'}>
+			
+					<Flex ml={['25px','33px']} w={['93%','50vw']} flexDirection={'column'} gap={'10px'}>
 						
 						
-					<Text fontSize={'xl'} display='inline-block'  gap={'2px'}
-						alignItems={'flex-start'} justifyContent={'flex-start'} 
-						w={'600px'} color={'#20E2EE'}>
-						{'<'} 
-						<Text  display='inline-block'  textShadow={'4xl'} pl={'20px'}>
+						<Text fontSize={['lg','xl']} display='inline-block'  gap={'2px'}
+							alignItems={'flex-start'} justifyContent={'flex-start'} 
+							w={['100%','100%']} color={'#20E2EE'}>
+							{'<'} 
+							<Text  display='inline-block'  textShadow={'4xl'} pl={['5px','20px']}>
                                 Experience<br/>
                                 value={'{'}
-							<Text as={'span'} color={'#EDFF7B'} >{'`'}</Text>
-							<Flex ml={'50   px'} pr={'33px'}>
+								<Text as={'span'} color={'#EDFF7B'} >{'`'}</Text>
+								<Flex fontSize={['sm','xl']} ml={['5px','20px']} pr={['5px','1px']}>
 
 								
-								<Text as={'span'} color={'#EDFF7B'} >
+									<Text as={'span'} color={'#EDFF7B'} >
 										
                                     Since I started my journey as a freelance developer 
                                     almost 
-									<Text as={'span'} color={'#FFFFFF'} > 5 years ago </Text>
+										<Text as={'span'} color={'#FFFFFF'} > 5 years ago </Text>
                                     , I have been doing 
-									<Text as={'span'} color={'#FFFFFF'} > remote work Startups </Text>
+										<Text as={'span'} color={'#FFFFFF'} > remote work Startups </Text>
                                     . And collaborated with talented people to 
                                     create web products for commercial and consumer
                                     use.
-									<br/>
-									<br/>
+										<br/>
+										<br/>
                                     I create successful responsive websites that are fast, 
                                     easy to use and built with best practices. The main 
                                     area of my experience is front-end development 
                                     using 
-									<Text as={'span'} color={'#FFFFFF'} > React </Text>
+										<Text as={'span'} color={'#FFFFFF'} > React </Text>
                                     building small and medium sized web apps, 
                                     custom plugins, features, animations and coding of 
                                     interactive layouts.
-									<br/>
-									<br/>
+										<br/>
+										<br/>
                                     I also develop backend services using 
-									<Text as={'span'} color={'#FFFFFF'} >  JS, TS and Python. </Text>
+										<Text as={'span'} color={'#FFFFFF'} >  JS, TS and Python. </Text>
                                     I have experience in game development using
-									<Text as={'span'} color={'#FFFFFF'} >  Unity in C#.  </Text>
+										<Text as={'span'} color={'#FFFFFF'} >  Unity in C#.  </Text>
 									
 
-								</Text> 
-							</Flex>
-							<Text as={'span'} color={'#EDFF7B'} >{'`'}</Text> 
-							{'}'}
+									</Text> 
+								</Flex>
+								<Text as={'span'} color={'#EDFF7B'} >{'`'}</Text> 
+								{'}'}
 								
 								
+							</Text>
+							<br/>
+							{'/>'}
 						</Text>
-						<br/>
-						{'/>'}
-					</Text>
 
+					</Flex>
 				</Flex>
-
-				<Box display={'flex'}  justifyContent={'center'} mt={'25px'} w={'100%'}>
-
+			
+				<Box display={'flex'} flexDirection='column' alignItems={'center'} justifyContent={'center'}  w={'100%'}>
+					<Image src={ImgHead} h={'150px'} w='150px' mt={'0px'} mb='50px' alt='Head' />
 					<Flex flexDirection={'column'} gap={'10px'}>
 						<Flex flexDirection={'column'} gap={'10px'}>
-							<Flex w={'310px'} alignItems='center'  flexDirection={'column'} gap={'2px'} >
+							<Flex w={['310px']} alignItems='center'  flexDirection={'column'} gap={'2px'} >
 								<Flex w={'100%'} justifyContent={'space-between'} alignItems={'end'}>
 									<Image src={ImgJs} h={'80px'} />
-									<Image src={ImgTs} h={'65px'} />
+									<Image src={ImgTs} h={'65px'} mt='15px'/>
 									<Image src={ImgCss} h={'80px'} />
-									<Image src={ImgReact} h={'65px'} />
+									<Image src={ImgReact} h={'65px'} mt='15px' />
 								</Flex>
 								<Image src={ImgUnderLine} h={'5px'} w={'100%'}/>
 							</Flex>
