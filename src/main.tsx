@@ -28,26 +28,26 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
 				<Box>
 					<Box display='flex' alignItems={'center'} justifyContent={'flex-end'} w={'99vw'} h='40px'  mt={'5px'}>
 						<UnorderedList  display='flex' gap={['10px','50px']} listStyleType='none' paddingRight={['15px','50px']} fontWeight='black'> 
-							<Link  fontSize={['12px','15px']}> <LinkRouter to='/'>Home</LinkRouter></Link>
-							<Link  fontSize={['12px','15px']}> <LinkRouter to='/about'>About me</LinkRouter></Link>
-							<Link fontSize={['12px','15px']}> <LinkRouter to='/skills'>Skills</LinkRouter> </Link>
-							<Link fontSize={['12px','15px']}> <LinkRouter to='/projects'>Portfolio</LinkRouter></Link>
+							<Link  fontSize={['12px','15px']}> <LinkRouter to='/portfolio/'>Home</LinkRouter></Link>
+							<Link  fontSize={['12px','15px']}> <LinkRouter to='/portfolio/about'>About me</LinkRouter></Link>
+							<Link fontSize={['12px','15px']}> <LinkRouter to='/portfolio/skills'>Skills</LinkRouter> </Link>
+							<Link fontSize={['12px','15px']}> <LinkRouter to='/portfolio/projects'>Portfolio</LinkRouter></Link>
 						</UnorderedList>
 						<Button justifyContent={'center'} display='flex' alignItems={'center'} 
 							textAlign={'center'} borderRadius={15} color={'#010208'} mr={['0px','50px']} h={'35px'} fontSize={['12px','15px']}>
-							<LinkRouter to='/contact'>CONTACT ME</LinkRouter>
+							<LinkRouter to='/portfolio/contact'>CONTACT ME</LinkRouter>
 						</Button>
 					</Box>
 				</Box>
 				<Routes>
-					<Route path="/" element={<Home />} >
+					<Route path="/portfolio/" element={<Home />} >
 						<Route index element={<Home />} />
 					</Route>
-					<Route path="/about" element={<About />}/>
-					<Route path="/skills" element={<Skills />}/>
-					<Route path="/projects" element={<Projects />}/>
-					<Route path="/portfolioLandEnd" element={<PortfolioLandEnd />}/>
-					<Route path="/contact" element={<Contact />}/>
+					<Route path="/portfolio/about" element={<About />}/>
+					<Route path="/portfolio/skills" element={<Skills />}/>
+					<Route path="/portfolio/projects" element={<Projects />}/>
+					<Route path="/portfolio/portfolioLandEnd" element={<PortfolioLandEnd />}/>
+					<Route path="/portfolio/contact" element={<Contact />}/>
 				</Routes>
 			</ChakraProvider>
 		</React.StrictMode>

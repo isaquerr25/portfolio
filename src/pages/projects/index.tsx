@@ -84,7 +84,7 @@ function Projects() {
 					
 					<Flex   display={'flex'} position={'relative'} w={'500px'} h={['auto','500px']} mt={['0px','100px']} alignItems={['end','center']} justifyContent={['flex-end','center']} mb={['0px','20px']} >
 						<Flex 	sx={{ transform: 'scale(0.9)', '&:hover': { transform: 'scale(1.0)' }, transition:'0.2s' }}>
-							<LinkRouter to='/portfolioLandEnd'>
+							<LinkRouter to='/portfolio/portfolioLandEnd'>
 								<Image src={ImgLand} left={['-100px','34%']} top={['40px','-60px']} transform="translateX(-50%, -50%)"   position='absolute' h={['200px','120px']}  w='auto' alt='Img Land' />
 								<Image src={ImgScreenLand} h={['300px','100%']}  w='auto' alt='Img Screen Land' />
 							</LinkRouter>
@@ -203,7 +203,7 @@ function Projects() {
 					
 				</Flex >
 			</Flex>
-			<LinkRouter to='/contact'>
+			<LinkRouter to='/portfolio/contact'>
 				<Flex w={'100%'} justifyContent='center' h={'auto'} overflowY='hidden' mb={'40px'}>
 					<Image  src={LetsWorkTogether} h={'auto'} w={['100%','55%']}  alt='Dan Abramov' 
 						sx={{ transform: 'scale(0.9)', '&:hover': { transform: 'scale(1.0)', filter: 'hue-rotate(-40deg)'}, transition:'0.2s' }} />

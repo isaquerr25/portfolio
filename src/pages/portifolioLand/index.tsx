@@ -64,7 +64,7 @@ function PortfolioLandEnd() {
 				<Image src={Img45} h={'auto'} w={'85%'}  alt='Dan Abramov'  />
 			</Flex>
 	
-			<LinkRouter to='/contact'>
+			<LinkRouter to='/portfolio/contact'>
 
 				<Flex w={'100%'} justifyContent='center' h={'auto'} overflowY='hidden' mb={'40px'} >
 
