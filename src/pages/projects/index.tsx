@@ -15,7 +15,7 @@ import imgDevelopmentH from '../../images/developmentH.png';
 import ImgUnderLine from '../../images/underLine.png';
 
 import {Link as LinkRouter} from 'react-router-dom';
-import { CirclePurple } from '../../components/circle';
+
 function Projects() {
 	
 	const { height, width } = useWindowDimensions();

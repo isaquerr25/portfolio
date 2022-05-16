@@ -23,7 +23,7 @@ import ImgBr from '../../images/br.png';
 import ImgEua from '../../images/eur.png';
 import ImgJp from '../../images/jps.png';
 
-import { CirclePurple } from '../../components/circle';
+
 function Skills() {
 
 	return (

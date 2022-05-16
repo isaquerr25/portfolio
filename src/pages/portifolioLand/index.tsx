@@ -13,7 +13,7 @@ import Img42 from '../../images/image42.png';
 import Img43 from '../../images/image43.png';
 import {Link as LinkRouter} from 'react-router-dom';
 
-import { CirclePurple } from '../../components/circle';
+
 
 function PortfolioLandEnd() {
 	return (

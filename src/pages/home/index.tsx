@@ -2,8 +2,7 @@ import { useState } from 'react';
 import { Box, Button, Circle, Flex, Image, Link, ListItem, Text, UnorderedList } from '@chakra-ui/react';
 import React from 'react';
 import Text_Isaque from '../../images/Text-Isaque.png';
-import { Monkey} from '../../components/monkey3D';
-import { CirclePurple } from '../../components/circle';
+
 import Skills from '../skills';
 import About from '../about';
 import Projects from '../projects';

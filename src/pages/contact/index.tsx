@@ -3,7 +3,7 @@ import { Box, Button, Circle, Flex, Image, Input, Link, ListItem, Select, Stack,
 import React from 'react';
 import Together from '../../images/together.png';
 import { useFormik } from 'formik';
-import { CirclePurple } from '../../components/circle';
+
 import axios from 'axios';
 
 
@@ -32,7 +32,7 @@ function Contact() {
 						`
 			};
 
-			await axios.post('http://localhost:4000/post_email', emailSend)
+			await axios.post('https://api.tempestinvest.com/post_email', emailSend)
 				.then(function (response) {
 					console.log(response);
 					setSubmitText('send Success');
