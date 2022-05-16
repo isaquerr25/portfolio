@@ -27,7 +27,7 @@ import ImgJp from '../../images/jps.png';
 function Skills() {
 
 	return (
-		<Flex className="Home" flexDirection={'column'} mb={'30px'}   position='relative'  w='100vw' >
+		<Flex ml={['0px','1vw']} className="Home" flexDirection={'column'} mb={'30px'}   position='relative'  w='100vw' >
 			<Box position={'absolute'} left={'-200px'}  top={'50px'} zIndex={'5'}>
 				<Circle size='500px' bg='radial-gradient(37.26% 37.26% at 50% 50%, rgba(170, 20, 240, 0.31) 0%, rgba(170, 20, 240, 0) 100%)' color='white'/>
 			</Box>
@@ -40,7 +40,7 @@ function Skills() {
 				
 
 			
-					<Flex ml={['25px','33px']} w={['93%','50vw']} flexDirection={'column'} gap={'10px'}>
+					<Flex ml={['25px','33px']} w={['93%','60vw']} flexDirection={'column'} gap={'10px'}>
 						
 						
 						<Text fontSize={['lg','2vw']} display='inline-block'  gap={'2px'}
@@ -53,7 +53,7 @@ function Skills() {
                                 Experience<br/>
                                 value={'{'}
 								<Text as={'span'} color={'#EDFF7B'} >{'`'}</Text>
-								<Flex fontSize={['sm','1.5vw']} ml={['5px','20px']} pr={['5px','1px']}>
+								<Flex fontSize={['sm','1.3vw']} fontWeight='normal' ml={['5px','20px']} pr={['5px','1px']}>
 
 								
 									<Text as={'span'} color={'#EDFF7B'} >
@@ -98,8 +98,8 @@ function Skills() {
 					</Flex>
 				</Flex>
 			
-				<Box  display={'flex'} flexDirection='column' alignItems={'center'} justifyContent={'center'}  w={['100%','50vw']}>
-					<Image src={ImgHead} h={['200px','15vw']} w={['200px','15vw']} mt={'0px'} mb={['50px','5px']} alt='Head' />
+				<Box  display={'flex'} flexDirection='column' alignItems={'center'} justifyContent={'center'}  w={['100%','40vw']}>
+					<Image src={ImgHead} h={['200px','14vw']} w={['200px','14vw']} mt={'0px'} mb={['50px','5px']} alt='Head' />
 					<Flex flexDirection={'column'} gap={'10px'}>
 						<Flex flexDirection={'column'} gap={'10px'} px='5%'>
 							<Flex w={'100%'} px='5%' alignItems='center'  flexDirection={'column'} gap={'2px'} >
