@@ -92,7 +92,7 @@ function Projects() {
 					{width <500 && <Image src={ImgUnderLine} h={'5px'} w={'90%'} opacity={0.2} mt='20px'/>}
 				
 					
-					<Flex   display={'flex'} position={'relative'} w={'auto'} h={'auto'} mt={['0px','100px']} alignItems={['end','center']} justifyContent={['flex-end','center']}  >
+					<Flex   display={'flex'} position={'relative'} w={['100vw','auto']} h={'auto'} mt={['0px','100px']} alignItems={['end','center']} justifyContent={['flex-end','center']}  >
 						<Flex 	sx={{ transform: 'scale(0.9)', '&:hover': { transform: 'scale(1.0)' }, transition:'0.2s' }}>
 							<LinkRouter to='/portfolio/portfolioLandEnd'>
 								<Image src={ImgLand} left={['-100px','34%']} top={['40px','-12%']} transform="translateX(-50%, -50%)"   position='absolute' h={['200px','10vw']}  w='auto' alt='Img Land' />
@@ -102,10 +102,10 @@ function Projects() {
 					</Flex>
 					{/* TODO  */}
 					<Flex  px={'20px'} display={'flex'} flexDirection='column' position={'relative'} w={['100%','48vw']} h={'auto'} mt={['0px','100px']} alignItems={'center'} justifyContent='flex-start' >
-						<Text w='100%' fontSize={['2.5vw']} textAlign={'left'} fontWeight='black' mt='5%'>
+						<Text w='100%' fontSize={['5vw','2.5vw']} textAlign={'left'} fontWeight='black' mt='5%'>
 						Land End Studio
 						</Text>
-						<Text mt='20px' fontSize={['sm','1.2vw']}>
+						<Text mt='20px' fontSize={['sm','1vw']}>
 						Worked as a level designer on several levels of the game, in addition to structuring the code, 
 						also with 3D modeling. Using Blender, Substance Painter, Unity and C# programming.	
 							<br/>
@@ -116,8 +116,8 @@ function Projects() {
 					
 					<Flex flexDirection={['column-reverse','row']} mt='50px' alignItems={'start'} justifyContent='flex-start' >
 
-						<Flex   px={'20px'} display={'flex'} flexDirection='column' position={'relative'} w={['100%','48vw']} h={'auto'} mt={['0px','0px']} alignItems={'center'} justifyContent='flex-start' >
-							<Text w='100%' fontSize={['2vw']} textAlign={'left'} fontWeight='black' >
+						<Flex   px={'20px'} display={'flex'} flexDirection='column' position={'relative'} w={['100vw','48vw']} h={'auto'} mt={['0px','0px']} alignItems={'center'} justifyContent='flex-start' >
+							<Text w='100%' fontSize={['5vw','2vw']}  textAlign={'left'} fontWeight='black' >
 								Spirit Gold Forex
 							</Text>
 							<Text mt='20px'  fontSize={['sm','1vw']}>
@@ -152,7 +152,7 @@ function Projects() {
 								Website: <Link fontWeight={'black'} color='#F2FC70' href='https://www.spiritgoldforex.com' isExternal>https://www.spiritgoldforex.com</Link>
 							</Text>	
 						</Flex>
-						<Flex   display={'flex'} position={'relative'} w='48%' h={'auto'} alignItems={['end','center']} justifyContent={['flex-end','center']} mb={['0px','0px']}>
+						<Flex   display={'flex'} position={'relative'} w={['100vw','48%']} h={'auto'} alignItems={['end','center']} justifyContent={['flex-end','center']} mb={['0px','0px']}>
 							<Flex 	sx={{ transform: 'scale(0.9)', '&:hover': { transform: 'scale(1.0)' }, transition:'0.2s' }}>
 								<Image src={ImgSpirit} left={['-100px','34%']} top={['40px','-18%']} transform="translateX(-50%, -50%)"   position='absolute' h={['200px','15vw']} w='auto' alt='ImgSpirit' />
 								<Image src={ImgScreenSpirit} h={['300px','auto']}  w={['auto','35vw']} alt='ImgScreenSpirit' />
@@ -163,7 +163,7 @@ function Projects() {
 					<Flex flexDirection={['column-reverse','row-reverse']} mt={['50px','0px']} alignItems={'start'} justifyContent='flex-start' >
 
 						<Flex   px={'20px'} display={'flex'} flexDirection='column' position={'relative'} w={['100%','48vw']} h={['auto','auto']} mt={['0px','20px']} alignItems={'center'} justifyContent='flex-start'>
-							<Text w='100%'  fontSize={['2vw']} textAlign={'left'} fontWeight='black'>
+							<Text w='100%'   fontSize={['5vw','2vw']} textAlign={'left'} fontWeight='black'>
 								Tempest Invest
 							</Text>
 							<Text mt='20px' fontSize={['sm','1.2vw']}>
@@ -177,7 +177,7 @@ function Projects() {
 								Website: <Link fontWeight={'black'} color='teal' href='https://www.tempestinvest.com/' isExternal>https://www.tempestinvest.com/</Link>
 							</Text>	
 						</Flex>
-						<Flex   display={'flex'} position={'relative'} w='48%' h={'auto'} alignItems={['end','center']} justifyContent={['flex-end','center']} mb={['0px','0px']}>
+						<Flex   display={'flex'} position={'relative'} w={['100vw','48%']}  h={'auto'} alignItems={['end','center']} justifyContent={['flex-end','center']} mb={['0px','0px']}>
 							<Flex 	sx={{ transform: 'scale(0.9)', '&:hover': { transform: 'scale(1.0)' }, transition:'0.2s' }}>
 								<Image src={ImgTempest} left={['-90px','34%']} top={['60px','-60px']} transform="translateX(-50%, -50%)"   position='absolute'h={['200px','11vw']} w='auto' alt='ImgSpirit' />
 								<Image src={  width > 500 ? ImgDevelopment  : imgDevelopmentH}  h={['300px','auto']}  w={['auto','35vw']} alt='ImgScreenSpirit' />
@@ -188,8 +188,8 @@ function Projects() {
 
 					<Flex flexDirection={['column-reverse','row']} mt={['50px','0px']} alignItems={'start'} justifyContent='flex-start' >
 
-						<Flex  ml='8%' px={'20px'} display={'flex'} flexDirection='column' position={'relative'} w={['75%','48vw']} h={'auto'} mt={['0px','30px']} alignItems={'flex-start'} justifyContent='flex-start' >
-							<Text w='100%'  fontSize={['2vw']} textAlign={'left'} fontWeight='black'>
+						<Flex  ml={['0%','8%']} px={'20px'} display={'flex'} flexDirection='column' position={'relative'} w={['100%','48vw']} h={'auto'} mt={['0px','30px']} alignItems={'flex-start'} justifyContent='flex-start' >
+							<Text w='100%'  fontSize={['5vw','2vw']} textAlign={'left'} fontWeight='black'>
 							Dingo.pt
 							</Text>
 							<Text mt='20px'  fontSize={['sm','1.2vw']}>
@@ -201,7 +201,7 @@ function Projects() {
 								Website: <Link fontWeight={'black'} color='#F2FC70' href='https://dingo.pt' isExternal> https://dingo.pt</Link>
 							</Text>	
 						</Flex>
-						<Flex   display={'flex'} position={'relative'} w='48%' h={'auto'} alignItems={['end','center']} justifyContent={['flex-end','center']} mb={['0px','20px']}>
+						<Flex   display={'flex'} position={'relative'} w={['100vw','48%']}  h={'auto'} alignItems={['end','center']} justifyContent={['flex-end','center']} mb={['0px','20px']}>
 							<Flex 	sx={{ transform: 'scale(0.9)', '&:hover': { transform: 'scale(1.0)' }, transition:'0.2s' }}>
 								<Image src={ImgDingo} left={['-90px','34%']} top={['60px','-60px']} transform="translateX(-50%, -50%)"   position='absolute' h={['200px','120px']} w='auto' alt='ImgSpirit' />
 								<Image src={ width > 500 ? ImgDevelopment : imgDevelopmentH} h={['300px','auto']}  w={['auto','48vw']} alt='ImgScreenSpirit' />
@@ -215,7 +215,7 @@ function Projects() {
 			</Flex>
 			<LinkRouter to='/contact'>
 				<Flex w={'100%'} justifyContent='center' h={'auto'} overflowY='hidden' mb={'40px'}>
-					<Image  src={LetsWorkTogether} h={'auto'} w={['100%','55%']}  alt='Dan Abramov' 
+					<Image  src={LetsWorkTogether} h={'auto'} w={['95%','55%']}  alt='Dan Abramov' 
 						sx={{ transform: 'scale(0.9)', '&:hover': { transform: 'scale(1.0)', filter: 'hue-rotate(-40deg)'}, transition:'0.2s' }} />
 					
 				</Flex>
