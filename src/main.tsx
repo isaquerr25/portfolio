@@ -24,7 +24,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
 	<BrowserRouter>
 		<React.StrictMode>
 			<ChakraProvider theme={theme}>
-				
+				<link rel="shortcut icon" type="image/x-icon" href="/78-pig/logo.jpg" />	
 				<Box>
 					<Box display='flex' alignItems={'center'} justifyContent={'flex-end'} w={'99vw'} h='40px'  mt={'1.5%'}>
 						<UnorderedList  display='flex' gap={['10px','50px']} listStyleType='none' paddingRight={['15px','50px']} fontWeight='black'> 
