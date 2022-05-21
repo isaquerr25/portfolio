@@ -33,7 +33,7 @@ function Projects() {
 						Some of the brands I’ve worked with
 				</Text>				
 			</Flex>
-			{width > 1000 &&
+			{1===0 &&
 			<Grid
 				h={['auto','400px']}
 				templateColumns='repeat(5, 1fr)'
@@ -71,19 +71,19 @@ function Projects() {
 				<GridItem rowSpan={2} bg='transparent' />
 
 				<GridItem rowSpan={2} h='auto' w='auto' justifyContent={'center'} alignItems='center' display={'flex'} bg='transparent' >
-					<Image src={ImgTempest} h={['50px','9.5vw']}  w='auto' alt='Img Tempest' sx={{ transform: 'scale(0.93)', '&:hover': { transform: 'scale(1.0)' }, transition:'0.2s' }} />
+					{ 1 === 0 && <Image src={ImgTempest} h={['50px','9.5vw']}  w='auto' alt='Img Tempest' sx={{ transform: 'scale(0.93)', '&:hover': { transform: 'scale(1.0)' }, transition:'0.2s' }} />}
 				</GridItem>
 
 				<GridItem rowSpan={2} bg='transparent' />
 			</Grid>}
 
-			{ width<=1000 &&
-				<Flex w={'100vw'} h='auto' justifyContent='center' alignItems='center' mt={'5vw'} >
-					<Image src={ImgLand} h={'20vw'} w='20vw' alt='Land End Studio' sx={{ transform: 'scale(0.93)', '&:hover': { transform: 'scale(1.0)' }, transition:'0.2s' }} />
-					<Image src={ImgSpirit} h={'20vw'} w='20vw' alt='Spirit Gold Forex' sx={{ transform: 'scale(0.93)', '&:hover': { transform: 'scale(1.0)' }, transition:'0.2s' }} />
-					<Image src={ImgDingo} h={'20vw'} w='20vw' alt='Dingo.pt' sx={{ transform: 'scale(0.93)', '&:hover': { transform: 'scale(1.0)' }, transition:'0.2s' }} />
-					<Image src={ImgHappy} h={'20vw'}  w={'20vw'} alt='Happy Code School' sx={{ transform: 'scale(0.93)', '&:hover': { transform: 'scale(1.0)' }, transition:'0.2s' }} />
-					<Image src={ImgTempest} h={'20vw'}  w='20vw' alt='Img Tempest' sx={{ transform: 'scale(0.93)', '&:hover': { transform: 'scale(1.0)' }, transition:'0.2s' }} />
+			{ 1===1 &&
+				<Flex w={'100vw'} h='auto' justifyContent='space-around' alignItems='center' mt={'5vw'} >
+					<Image src={ImgLand} h={['20vw','17vw','12vw']} w={['20vw','17vw','12vw']} alt='Land End Studio' sx={{ transform: 'scale(0.93)', '&:hover': { transform: 'scale(1.0)' }, transition:'0.2s' }} />
+					<Image src={ImgSpirit} h={['23vw','20vw','14vw']} w={['20vw','17vw','12vw']} alt='Spirit Gold Forex' sx={{ transform: 'scale(0.93)', '&:hover': { transform: 'scale(1.0)' }, transition:'0.2s' }} />
+					{1===0 && <Image src={ImgDingo} h={['20vw','17vw','12vw']} w={['20vw','17vw','12vw']} alt='Dingo.pt' sx={{ transform: 'scale(0.93)', '&:hover': { transform: 'scale(1.0)' }, transition:'0.2s' }} />}
+					<Image src={ImgHappy} h={['20vw','17vw','12vw']}  w={['20vw','17vw','12vw']} alt='Happy Code School' sx={{ transform: 'scale(0.93)', '&:hover': { transform: 'scale(1.0)' }, transition:'0.2s' }} />
+					<Image src={ImgTempest} h={['20vw','17vw','12vw']}  w={['20vw','17vw','12vw']} alt='Img Tempest' sx={{ transform: 'scale(0.93)', '&:hover': { transform: 'scale(1.0)' }, transition:'0.2s' }} />
 
 				</Flex>}
 			<Flex  w='99vw' >
@@ -186,7 +186,7 @@ function Projects() {
 					
 					</Flex>
 
-					<Flex flexDirection={['column-reverse','row']} mt={['50px','0px']} alignItems={'start'} justifyContent='flex-start' >
+					{ 1=== 0 && <Flex flexDirection={['column-reverse','row']} mt={['50px','0px']} alignItems={'start'} justifyContent='flex-start' >
 
 						<Flex  ml={['0%','8%']} px={'20px'} display={'flex'} flexDirection='column' position={'relative'} w={['100%','48vw']} h={'auto'} mt={['0px','30px']} alignItems={'flex-start'} justifyContent='flex-start' >
 							<Text w='100%'  fontSize={['5vw','2vw']} textAlign={'left'} fontWeight='black'>
@@ -207,7 +207,7 @@ function Projects() {
 								<Image src={ width > 500 ? ImgDevelopment : imgDevelopmentH} h={['300px','auto']}  w={['auto','48vw']} alt='ImgScreenSpirit' />
 							</Flex>
 						</Flex>
-					</Flex>
+					</Flex>}
 
 					
 					
