@@ -3,7 +3,7 @@ import { Box, Button, ChakraProvider, Circle, Flex, Image, ListItem,Link, Text, 
 import ReactDOM from 'react-dom/client';
 import App from './App';
 import './index.css';
-import Home from './pages/home';
+import Home from './pages/all';
 import Contact from './pages/contact';
 import { theme } from './theme';
 import Skills from './pages/skills';
@@ -17,6 +17,7 @@ import {
 	Route,
 	Link as LinkRouter
 } from 'react-router-dom';
+import All from './pages/all';
 
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
@@ -30,7 +31,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
 						<UnorderedList  display='flex' gap={['10px','50px']} listStyleType='none' paddingRight={['15px','50px']} fontWeight='black'> 
 							<Link  fontSize={['12px','1.5vw']}> <LinkRouter to='/'>Home</LinkRouter></Link>
 							<Link  fontSize={['12px','1.5vw']}> <LinkRouter to='/about'>About me</LinkRouter></Link>
-							<Link fontSize={['12px','1.5vw']}> <LinkRouter to='/skills'>Skills</LinkRouter> </Link>
+							<Link fontSize={['12px','1.5vw']}> <LinkRouter to='/#skills'>Skills</LinkRouter> </Link>
 							<Link fontSize={['12px','1.5vw']}> <LinkRouter to='/projects'>Portfolio</LinkRouter></Link>
 						</UnorderedList>
 						<Button justifyContent={'center'} display='flex' alignItems={'center'} 
@@ -41,8 +42,9 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
 				</Box>
 				<Routes>
 					<Route path="/" element={<Home />} >
-						<Route index element={<Home />} />
+						<Route index element={<All />} />
 					</Route>
+					<Route path="/home" element={<Home />} />
 					<Route path="/about" element={<About />}/>
 					<Route path="/skills" element={<Skills />}/>
 					<Route path="/projects" element={<Projects />}/>

@@ -45,42 +45,42 @@ function Contact() {
 	});
 
 	return (
-		<Box className="Contact" overflowX={'hidden'}  position='relative'  w='100vw'>
+		<Box className="Contact"   position='relative'  w='100vw' h='100%'>
 			<Box position={'absolute'} left={'0px'}  bottom={'-50px'} zIndex={'-5'} >
 				<Circle size='450px' bg='radial-gradient(37.26% 37.26% at 50% 50%, rgba(170, 20, 240, 0.31) 0%, rgba(170, 20, 240, 0) 100%)' color='white'/>
 			</Box>
-			<Image src={Together} h={['35px','50px']} w='auto' mt={'33px'} ml={['10px','33px']} alt='Dan Abramov'  sx={{ transform: 'scale(0.9)', '&:hover': { transform: 'scale(1.0)', filter: 'hue-rotate(53deg)'}, transition:'0.2s' }}/>
+			<Image src={Together} h={['35px','50px']} w='auto' mt={'33px'} ml={['10px','2rem']} alt='Dan Abramov'  sx={{ transform: 'scale(0.9)', '&:hover': { transform: 'scale(1.0)', filter: 'hue-rotate(53deg)'}, transition:'0.2s' }}/>
 			
 			<Flex w='100vw' justifyContent={'space-between'}>
 				<Flex pl={['15px','33px']} fontWeight='black' flexDirection={['column','row']} h='70%' mt={'25px'}>
 
 
-					<Flex mt={['5px','25px']} flexDirection={'column'} gap={'10px'}>
+					<Flex mt={['5px','25px']} flexDirection={'column'} gap={'10px'} pl='1rem'>
 						<Text color={'#909090'} fontSize={['sm','lg']} mr='10px' display='flex'  gap={5}  alignItems={'center'} justifyContent={'flex-start'}>
 						You have an idea and you  need a developer.<br/> Let's work together.
 						</Text>
 						
 						<Text fontSize={['15px','xl']} display='flex' flexDirection={['row','column']} flexWrap={'wrap'}  gap={'2px'}
 							alignItems={'flex-start'} justifyContent={'flex-start'} 
-							w={['90vw','600px']} color={'#20E2EE'}>
+							w={['90vw','35rem']} color={'#20E2EE'}>
 							
-							<Text as={'span'} color={'#D05F1F'}>{'<'} Contato</Text> 
+							<Text as={'span'} color={'#D05F1F'}><Text as={'span'} color={'teal'}>{'<'}</Text> Contato</Text> 
 							<Text textShadow={'4xl'} pl={['20px','20px']}>
 									number={'{ '}
 								<Text as={'span'} display='block' color={'#20EE28'}>WhatSapp : +55 (66) 9 9979 - 1203 </Text> {'}'}
 								<br/>
 									email={'{ '}<Text as={'span'}  color={'#C5EE20'}> “<Link href='mailto:isaqueribeiro964@gmail.com'>isaqueribeiro964@gmail.com</Link>”  </Text> {'}'}
 								<br/>
-								{'/>'}
+								
 							</Text>
-							
+							<Text as={'span'} color={'teal'}>{'/>'}</Text>
 						</Text>
 
 					</Flex>
 
 					<form onSubmit={formik.handleSubmit}>
 						<Flex flexDirection={'column'} gap={'10px'}>
-							<Text color={'#909090'} mt={['15px','0px']} fontSize={['sm','xl']} display='flex' w={['95%','500px']} gap={5}  alignItems={'center'} justifyContent={'flex-start'}>
+							<Text color={'#909090'} mt={['15px','18rem']} fontSize={['sm','lg']}  display='flex' w={['95%','500px']} gap={5}  alignItems={'center'} justifyContent={'flex-start'}>
 						Have a project? Message me if you want to work 
 						together on something exciting.
 						Big or small. 

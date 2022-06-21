@@ -27,20 +27,30 @@ import ImgJp from '../../images/jps.png';
 function Skills() {
 
 	return (
-		<Flex ml={['0px','1vw']} className="Home" flexDirection={'column'} mb={'30px'}   position='relative'  w='100vw' >
+		<Flex id='skills'  flexDirection={'column'}   position='relative'  w='100vw' bg='rgba(0, 0, 0, 0.5)'  py='4rem'>
 			<Box position={'absolute'} left={'-200px'}  top={'50px'} zIndex={'5'}>
 				<Circle size='500px' bg='radial-gradient(37.26% 37.26% at 50% 50%, rgba(170, 20, 240, 0.31) 0%, rgba(170, 20, 240, 0) 100%)' color='white'/>
 			</Box>
-			<Box position={'absolute'} right={'150px'}  top={'-80px'} zIndex={'-5'}>
-				<Circle size='450px' bg='radial-gradient(37.26% 37.26% at 50% 50%, rgba(170, 20, 240, 0.31) 0%, rgba(170, 20, 240, 0) 100%)' color='white'/>
+			<Box position={'absolute'} right={'6rem'}  top={'-1rem'} zIndex={'-5'}>
+				<Circle size='25rem' bg='radial-gradient(37.26% 37.26% at 50% 50%, rgba(170, 20, 240, 0.31) 0%, rgba(170, 20, 240, 0) 100%)' color='white'/>
 			</Box>
 			<Flex flexDirection={['column','row']} w='99vw' justifyContent={['center','space-between']} alignItems='flex-start'>
-				<Flex w={['100%','50vw']} flexDirection='column' justifyContent='space-between' mt={'10px'}>
-					<Image src={ImgSkills} h={['80px','7vw']}  w={['200px','18vw']} mt={['33px','0px']} ml={['25px','33px']} alt='Dan Abramov' />
-				
+				<Flex w={['100%','50vw']} flexDirection='column' justifyContent='space-between' mt={'3rem'}>
+					<Image 
+						src={ImgSkills} 
+						h={['80px','7vw']}  
+						w={['200px','18vw']} 
+						mt={['33px','0px']} 
+						ml={['25px','3rem']} 
+						alt='skin and experience' 
+						zIndex={1000}
+						sx={{ 
+							transform: 'scale(0.9)', 
+							'&:hover': { transform: 'scale(1.0)', filter: 'hue-rotate(300deg)'}, transition:'0.2s' 
+						}} 
+					/>
 
-			
-					<Flex ml={['25px','33px']} w={['93%','60vw']} flexDirection={'column'} gap={'10px'}>
+					<Flex  ml={['25px','3.5rem']} w={['93%','60vw']} flexDirection={'column'} gap={'10px'}>
 						
 						
 						<Text fontSize={['lg','2vw']} display='inline-block'  gap={'2px'}
@@ -49,11 +59,11 @@ function Skills() {
 							fontWeight={'bold'}
 						>
 							{'<'} 
-							<Text  display='inline-block'  textShadow={'4xl'} pl={['5px','20px']}>
+							<Text  display='inline-block'  textShadow={'4xl'} pl={['5px','20px']} >
                                 Experience<br/>
                                 value={'{'}
 								<Text as={'span'} color={'#EDFF7B'} >{'`'}</Text>
-								<Flex fontSize={['sm','1.3vw']} fontWeight='normal' ml={['5px','20px']} pr={['5px','1px']}>
+								<Flex className='ddd' fontSize={['sm','1.5vw']} fontWeight='normal' ml={['5px','20px']} pr={['5px','4rem']}>
 
 								
 									<Text as={'span'} color={'#EDFF7B'} >
@@ -98,7 +108,7 @@ function Skills() {
 					</Flex>
 				</Flex>
 			
-				<Box  display={'flex'} flexDirection='column' alignItems={'center'} justifyContent={'center'}  w={['100%','40vw']}>
+				<Box  display={'flex'} flexDirection='column' alignItems={'center'} justifyContent={'center'} mt='2rem'  w={['100%','40vw']}>
 					<Image src={ImgHead} h={['200px','14vw']} w={['200px','14vw']} mt={'0px'} mb={['50px','5px']} alt='Head' />
 					<Flex flexDirection={'column'} gap={'10px'}>
 						<Flex flexDirection={'column'} gap={'10px'} px='5%'>

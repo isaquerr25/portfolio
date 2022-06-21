@@ -23,9 +23,9 @@ function Projects() {
 	
 	const { isOpen, onToggle } = useDisclosure();
 	return (
-		<Flex className="Projects" flexDirection={'column'}  overflowX={'hidden'}  mb={'30px'}   position='relative'  w='100vw' >
+		<Flex className="Projects" flexDirection={'column'}  overflowX={'hidden'} position='relative'  w='100vw' bg='rgba(0, 0, 0, 0.5)'  py='4rem' >
 			<Flex w={'100%'} justifyContent='space-between' >
-				<Image src={ImgProjects} h={['45px','4.5vw']} mt={'20px'}  ml={'20px'}  alt='Dan Abramov'  sx={{ transform: 'scale(0.9)', '&:hover': { transform: 'scale(1.0)', filter: 'hue-rotate(53deg)'}, transition:'0.2s' }}/>
+				<Image src={ImgProjects} h={['45px','4.5vw']} mt={'20px'}  ml={'3rem'}  alt='Dan Abramov'  sx={{ transform: 'scale(0.9)', '&:hover': { transform: 'scale(1.0)', filter: 'hue-rotate(53deg)'}, transition:'0.2s' }}/>
 			</Flex>
 			<Flex w='99vw' justifyContent={'center'} mt={['25px','0px']} >
 				<Text as={'span'} fontSize={['lg','2.5vw']} color='#00F0FF' fontWeight={'black'} sx={{ transform: 'scale(0.9)', '&:hover': { transform: 'scale(1.0)', filter: 'hue-rotate(53deg)'}, transition:'0.2s' }}>

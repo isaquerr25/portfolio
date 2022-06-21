@@ -10,7 +10,7 @@ function Home() {
 
 	return (
 		<>
-			<Box className="Home" display={'flex'} flexDirection='column' justifyContent={'center'} overflowX={'hidden'} h={ ['calc(100vh - 5vmin)']} >
+			<Box className="Home" display={'flex'} flexDirection='column' justifyContent={'center'} overflowX={'hidden'} h={ ['calc(100vh - 5vmin)']} px={['10px','50px']}>
 				<Box position={'absolute'} right={'0px'} top={'150px'} maxH={'70%'} overflowY={'hidden'} >
 					<Circle size='651.4px' bg='radial-gradient(37.26% 37.26% at 9.11% -10.1%, rgba(170, 20, 240, 0.31) 0%, rgba(170, 20, 240, 0) 100%)' color='white'/>
 				</Box>
@@ -18,12 +18,12 @@ function Home() {
 					<Circle size='500px' bg='radial-gradient(37.26% 37.26% at 50% 50%, rgba(170, 20, 240, 0.31) 0%, rgba(170, 20, 240, 0) 100%)' color='white'/>
 				</Box>
 				<Flex>
-					<Box fontWeight='black' h='70%' mt={'25px'} ml='3rem'>
-						<Text fontSize={['10vw','5vw']} >
+					<Box fontWeight='black' h='70%' mt={'25px'}>
+						<Text fontSize={['10vw','5vw']}>
 							Hi, I am
 						</Text>
-						<Text fontSize={['10vw','5vw']} display='flex'  gap={5} ml='-0.5rem' alignItems={'center'} justifyContent={'flex-start'}>
-							<Image zIndex={10} src={Text_Isaque} h={['10vw','5.5vw']} alt='Isaque'   sx={{ transform: 'scale(0.9)', '&:hover': { transform: 'scale(1.0)', filter: 'hue-rotate(-100deg)'}, transition:'0.25s' }} />
+						<Text fontSize={['10vw','5vw']} display='flex'  gap={5}  alignItems={'center'} justifyContent={'flex-start'}>
+							<Image src={Text_Isaque} h={['10vw','5vw']} alt='Isaque'   sx={{ transform: 'scale(0.9)', '&:hover': { transform: 'scale(1.0)', filter: 'hue-rotate(240deg)'}, transition:'0.25s' }} />
 							R. Ferreira
 						</Text>
 						<Text color={'B8B8B8'} fontSize={['lg','2vw']} display='flex'  gap={5}  alignItems={'center'} justifyContent={'flex-start'}>
@@ -50,7 +50,12 @@ function Home() {
 						</Flex>
 					</Box>
 				</Flex>
+			
+			
 			</Box>
+			<Skills />
+			<About />
+			<Projects />
 		</>
 	);
 }
