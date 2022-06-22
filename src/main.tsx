@@ -30,9 +30,9 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
 					<Box display='flex' alignItems={'center'} justifyContent={'flex-end'} w={'99vw'} h='40px'  mt={'1.5%'}>
 						<UnorderedList  display='flex' gap={['10px','50px']} listStyleType='none' paddingRight={['15px','50px']} fontWeight='black'> 
 							<Link  fontSize={['12px','1.5vw']}> <LinkRouter to='/'>Home</LinkRouter></Link>
-							<Link  fontSize={['12px','1.5vw']}> <LinkRouter to='/about'>About me</LinkRouter></Link>
-							<Link fontSize={['12px','1.5vw']}> <LinkRouter to='/#skills'>Skills</LinkRouter> </Link>
-							<Link fontSize={['12px','1.5vw']}> <LinkRouter to='/projects'>Portfolio</LinkRouter></Link>
+							<Link  fontSize={['12px','1.5vw']}> <a href='/#about'>About me</a></Link>
+							<Link fontSize={['12px','1.5vw']}> <a  href='/#skills'>Skills</a> </Link>
+							<Link fontSize={['12px','1.5vw']}> <a  href='/#projects'>Portfolio</a></Link>
 						</UnorderedList>
 						<Button justifyContent={'center'} display='flex' alignItems={'center'} 
 							textAlign={'center'} p='1vw' borderRadius={50} color={'#010208'} mr={['0px','50px']} h={'auto'} fontSize={['12px','1.5vw']}>
@@ -48,7 +48,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
 					<Route path="/about" element={<About />}/>
 					<Route path="/skills" element={<Skills />}/>
 					<Route path="/projects" element={<Projects />}/>
-					<Route path="/portfolioLandEnd" element={<PortfolioLandEnd />}/>
+					<Route path="/portfolio/portfolioLandEnd" element={<PortfolioLandEnd />}/>
 					<Route path="/contact" element={<Contact />}/>
 				</Routes>
 			</ChakraProvider>

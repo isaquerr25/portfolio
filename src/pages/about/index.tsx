@@ -9,16 +9,16 @@ import {BsInstagram} from 'react-icons/bs';
 
 function About() {
 	return (
-		<Flex className="Skills" flexDirection={'column'} overflowX={'hidden'}  position='relative'  w='100%'  py='4rem'>
+		<Flex id='about' className="about" flexDirection={'column'} overflowX={'hidden'}  position='relative'  w='100%'  py={{base:'1rem',lg:'4rem'}}>
 		
 
 			<Box position={'absolute'} right={'0px'}  top={'-40px'} zIndex={'-5'}>
 				<Image src={ImgMonkey} h={'290px'} mt={'20px'}  opacity={[0.3,1]} alt='Dan Abramov' />
 			</Box>
 
-			<Flex w={'100%'} max-w={'100vw'} justifyContent='flex-start' mt='1rem' alignItems={'center'} gap='1rem'>
+			<Flex w={'100%'} justifyContent='flex-start' mt='1rem' alignItems={'center'} gap='1rem' flexWrap={'wrap'}>
 				<Image src={ImgAboutMe}   h={['45px','3.18vw']} ml='3rem'  alt='Dan Abramov' sx={{ transform: 'scale(0.9)', '&:hover': { transform: 'scale(1.0)', filter: 'hue-rotate(603deg)'}, transition:'0.2s' }} />
-				<Link href='https://www.linkedin.com/in/isaque-ferreira-20007b165/' p='0rem' w='auto' h='auto' isExternal>
+				<Link ml={{base:'3rem',lg:'3rem'}}   href='https://www.linkedin.com/in/isaque-ferreira-20007b165/' p='0rem' w='auto' h='auto' isExternal>
 					<Icon  h='auto' w='4rem' as={AiFillLinkedin} color='#0AFFF4' p='0rem'  sx={{ transform: 'scale(0.9)', '&:hover': { transform: 'scale(1.0)', filter: 'hue-rotate(603deg)'}, transition:'0.2s' }}/>
 				</Link>
 				<Link href='https://www.instagram.com/isaquerr25/' p='0rem' w='auto' h='auto' isExternal>
@@ -28,9 +28,9 @@ function About() {
 			
 			<Flex w='99vw'  >
 				
-				<Flex   justifyContent={'center'}  w={'100%'} flexDirection={'column'} gap={'10px'} mt={'20px'}>
+				<Flex   justifyContent={'center'}  w={'100%'} flexDirection={'column'} gap={'10px'} mt={{base:'0px', lg:'20px'}}>
 						
-					<Text fontSize={['sm','1.5vw']} display='inline-block'  gap={'2px'} ml='3rem'
+					<Text fontSize={['sm','1.5vw']} display='inline-block'  gap={'2px'} pl={{base:'2rem', lg:'3rem'}}
 						alignItems={'flex-start'} justifyContent={'flex-start'} 
 						w={['90%','75%']} color={'#909090'} fontWeight='bold'>
 						{'/*'} 

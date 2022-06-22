@@ -23,7 +23,7 @@ function Projects() {
 	
 	const { isOpen, onToggle } = useDisclosure();
 	return (
-		<Flex className="Projects" flexDirection={'column'}  overflowX={'hidden'} position='relative'  w='100vw' bg='rgba(0, 0, 0, 0.5)'  py='4rem' >
+		<Flex id='projects' className="Projects" flexDirection={'column'}  overflowX={'hidden'} position='relative'  w='100vw' bg='rgba(0, 0, 0, 0.5)'  py='4rem' >
 			<Flex w={'100%'} justifyContent='space-between' >
 				<Image src={ImgProjects} h={['45px','4.5vw']} mt={'20px'}  ml={'3rem'}  alt='Dan Abramov'  sx={{ transform: 'scale(0.9)', '&:hover': { transform: 'scale(1.0)', filter: 'hue-rotate(53deg)'}, transition:'0.2s' }}/>
 			</Flex>
@@ -33,7 +33,7 @@ function Projects() {
 						Some of the brands I’ve worked with
 				</Text>				
 			</Flex>
-			{1===0 &&
+			{/* &&
 			<Grid
 				h={['auto','400px']}
 				templateColumns='repeat(5, 1fr)'
@@ -75,17 +75,24 @@ function Projects() {
 				</GridItem>
 
 				<GridItem rowSpan={2} bg='transparent' />
-			</Grid>}
+		</Grid>*/}
 
-			{ 1===1 &&
-				<Flex w={'100vw'} h='auto' justifyContent='space-around' alignItems='center' mt={'5vw'} >
-					<Image src={ImgLand} h={['20vw','17vw','12vw']} w={['20vw','17vw','12vw']} alt='Land End Studio' sx={{ transform: 'scale(0.93)', '&:hover': { transform: 'scale(1.0)' }, transition:'0.2s' }} />
-					<Image src={ImgSpirit} h={['23vw','20vw','14vw']} w={['20vw','17vw','12vw']} alt='Spirit Gold Forex' sx={{ transform: 'scale(0.93)', '&:hover': { transform: 'scale(1.0)' }, transition:'0.2s' }} />
-					{1===0 && <Image src={ImgDingo} h={['20vw','17vw','12vw']} w={['20vw','17vw','12vw']} alt='Dingo.pt' sx={{ transform: 'scale(0.93)', '&:hover': { transform: 'scale(1.0)' }, transition:'0.2s' }} />}
-					<Image src={ImgHappy} h={['20vw','17vw','12vw']}  w={['20vw','17vw','12vw']} alt='Happy Code School' sx={{ transform: 'scale(0.93)', '&:hover': { transform: 'scale(1.0)' }, transition:'0.2s' }} />
-					<Image src={ImgTempest} h={['20vw','17vw','12vw']}  w={['20vw','17vw','12vw']} alt='Img Tempest' sx={{ transform: 'scale(0.93)', '&:hover': { transform: 'scale(1.0)' }, transition:'0.2s' }} />
+			
+			<Flex w={'100vw'} h='auto' justifyContent='space-around' alignItems='center' mt={'5vw'} >
+				<Image src={ImgLand} h={['20vw','17vw','12vw']} w={['20vw','17vw','12vw']} alt='Land End Studio' sx={{ transform: 'scale(0.93)', '&:hover': { transform: 'scale(1.0)' }, transition:'0.2s' }} />
+				<Image src={ImgSpirit} h={['23vw','20vw','14vw']} w={['20vw','17vw','12vw']} alt='Spirit Gold Forex' sx={{ transform: 'scale(0.93)', '&:hover': { transform: 'scale(1.0)' }, transition:'0.2s' }} />
+				{/*
+					<Image src={ImgDingo}
+						h={['20vw','17vw','12vw']} 
+						w={['20vw','17vw','12vw']} 
+						alt='Dingo.pt' 
+						sx={{ transform: 'scale(0.93)', '&:hover': { transform: 'scale(1.0)' }, transition:'0.2s' }} 
+					/>*/}
+				<Image src={ImgHappy} h={['20vw','17vw','12vw']}  w={['20vw','17vw','12vw']} alt='Happy Code School' sx={{ transform: 'scale(0.93)', '&:hover': { transform: 'scale(1.0)' }, transition:'0.2s' }} />
+				<Image src={ImgTempest} h={['20vw','17vw','12vw']}  w={['20vw','17vw','12vw']} alt='Img Tempest' sx={{ transform: 'scale(0.93)', '&:hover': { transform: 'scale(1.0)' }, transition:'0.2s' }} />
 
-				</Flex>}
+			</Flex>
+				
 			<Flex  w='99vw' >
 
 				<Flex flexWrap={'wrap'}  justifyContent={'center'} w='100% ' alignItems={'flex-start'} mb='50px' >
@@ -186,7 +193,7 @@ function Projects() {
 					
 					</Flex>
 
-					{ 1=== 0 && <Flex flexDirection={['column-reverse','row']} mt={['50px','0px']} alignItems={'start'} justifyContent='flex-start' >
+					{ /* <Flex flexDirection={['column-reverse','row']} mt={['50px','0px']} alignItems={'start'} justifyContent='flex-start' >
 
 						<Flex  ml={['0%','8%']} px={'20px'} display={'flex'} flexDirection='column' position={'relative'} w={['100%','48vw']} h={'auto'} mt={['0px','30px']} alignItems={'flex-start'} justifyContent='flex-start' >
 							<Text w='100%'  fontSize={['5vw','2vw']} textAlign={'left'} fontWeight='black'>
@@ -207,7 +214,7 @@ function Projects() {
 								<Image src={ width > 500 ? ImgDevelopment : imgDevelopmentH} h={['300px','auto']}  w={['auto','48vw']} alt='ImgScreenSpirit' />
 							</Flex>
 						</Flex>
-					</Flex>}
+				</Flex>*/}
 
 					
 					

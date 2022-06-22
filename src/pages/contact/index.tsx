@@ -45,27 +45,27 @@ function Contact() {
 	});
 
 	return (
-		<Box className="Contact"   position='relative'  w='100vw' h='100%'>
+		<Box className="Contact" maxW={'100vw'} maxH='100vh' overflowY={'hidden'} overflowX='hidden' position='relative'  w='100vw' h='100%'>
 			<Box position={'absolute'} left={'0px'}  bottom={'-50px'} zIndex={'-5'} >
 				<Circle size='450px' bg='radial-gradient(37.26% 37.26% at 50% 50%, rgba(170, 20, 240, 0.31) 0%, rgba(170, 20, 240, 0) 100%)' color='white'/>
 			</Box>
-			<Image src={Together} h={['35px','50px']} w='auto' mt={'33px'} ml={['10px','2rem']} alt='Dan Abramov'  sx={{ transform: 'scale(0.9)', '&:hover': { transform: 'scale(1.0)', filter: 'hue-rotate(53deg)'}, transition:'0.2s' }}/>
+			<Image src={Together} h={['35px','50px']} w='auto' mt={'33px'} ml={{base:'0',xl:'2rem'}} alt='Dan Abramov'  sx={{ transform: 'scale(0.9)', '&:hover': { transform: 'scale(1.0)', filter: 'hue-rotate(53deg)'}, transition:'0.2s' }}/>
 			
 			<Flex w='100vw' justifyContent={'space-between'}>
-				<Flex pl={['15px','33px']} fontWeight='black' flexDirection={['column','row']} h='70%' mt={'25px'}>
+				<Flex px={{base:'1rem',xl:'2rem'}} fontWeight='black' flexDirection={{base:'column',lg:'row'}} h='70%' mt={'25px'}>
 
 
 					<Flex mt={['5px','25px']} flexDirection={'column'} gap={'10px'} pl='1rem'>
-						<Text color={'#909090'} fontSize={['sm','lg']} mr='10px' display='flex'  gap={5}  alignItems={'center'} justifyContent={'flex-start'}>
+						<Text color={'#909090'} fontSize={{base:'sm',md:'xl',lg:'lg',xl:'xl','2xl':'3xl'}} mr='10px' display='flex'  gap={5}  alignItems={'center'} justifyContent={'flex-start'}>
 						You have an idea and you  need a developer.<br/> Let's work together.
 						</Text>
 						
-						<Text fontSize={['15px','xl']} display='flex' flexDirection={['row','column']} flexWrap={'wrap'}  gap={'2px'}
+						<Text  display='block'fontSize={{base:'sm',md:'xl',lg:'lg',xl:'xl','2xl':'3xl'}} flexDirection={['row','column']} flexWrap={'wrap'}  gap={'2px'}
 							alignItems={'flex-start'} justifyContent={'flex-start'} 
-							w={['90vw','35rem']} color={'#20E2EE'}>
+							w={{base:'90vw',lg:'40vw'}} color={'#20E2EE'}>
 							
-							<Text as={'span'} color={'#D05F1F'}><Text as={'span'} color={'teal'}>{'<'}</Text> Contato</Text> 
-							<Text textShadow={'4xl'} pl={['20px','20px']}>
+							<Text display='block' as={'span'} color={'#D05F1F'}><Text as={'span'} color={'teal'}>{'<'}</Text> Contato</Text> 
+							<Text  display='block' textShadow={'4xl'} pl={['20px','20px']}>
 									number={'{ '}
 								<Text as={'span'} display='block' color={'#20EE28'}>WhatSapp : +55 (66) 9 9979 - 1203 </Text> {'}'}
 								<br/>
@@ -73,24 +73,31 @@ function Contact() {
 								<br/>
 								
 							</Text>
-							<Text as={'span'} color={'teal'}>{'/>'}</Text>
+							<Text as={'p'} display='block' color={'teal'} >{'/>'}</Text>
 						</Text>
 
 					</Flex>
 
 					<form onSubmit={formik.handleSubmit}>
-						<Flex flexDirection={'column'} gap={'10px'}>
-							<Text color={'#909090'} mt={['15px','18rem']} fontSize={['sm','lg']}  display='flex' w={['95%','500px']} gap={5}  alignItems={'center'} justifyContent={'flex-start'}>
-						Have a project? Message me if you want to work 
-						together on something exciting.
-						Big or small. 
-						Mobile, web or game.
+						<Flex flexDirection={'column'} gap={'10px'} w={{base:'100%',lg:'50vw'}}>
+							<Text color={'#909090'} mt={{base:'3rem',lg:'1.5rem'}} 
+								textAlign='justify' mb='1.5rem' fontSize={{base:'sm',md:'lg',lg:'lg',xl:'xl','2xl':'3xl'}}  
+								display={{base:'block',xl:'flex' }} w={['95%','100%']} 
+								gap={5}  alignItems={'center'} 
+								justifyContent={'flex-start'} pr={{xl:'1rem'}}>
+								Have a project? Message me if you want to work 
+								together on something exciting.
+								Big or small. 
+								Mobile, web or game.
 							</Text>
-							<Flex flexDirection={'column'}  gap={'30px'}>
+							<Flex flexDirection={'column'}  gap={'30px'} pr={{xl:'1rem'}}>
 								<Stack direction={['column','row']} spacing={3} >
-									<Box w={['95%','300px']}>
-										<Text color={'#909090'} fontSize={'sm'}>Your Name</Text>
-										<Input disabled={useSubmit} isRequired variant='flushed' placeholder='What’s your name?' 
+									<Box w={{base:'95%',xl:'300px','2xl':'40rem'}}>
+										<Text color={'#909090'} fontSize={{base:'sm',lg:'lg',xl:'xl','2xl':'2xl'}} >Your Name</Text>
+										<Input fontSize={{base:'sm',lg:'lg',xl:'xl','2xl':'2xl'}}  
+											disabled={useSubmit} 
+											isRequired variant='flushed' 
+											placeholder='What’s your name?' 
 											id='name'
 											name='name'
 											type='name'
@@ -98,9 +105,12 @@ function Contact() {
 											value={formik.values.name}
 										/>
 									</Box>
-									<Box  w={['95%','300px']}>
-										<Text color={'#909090'} fontSize={'sm'}>Your Email</Text>
-										<Input disabled={useSubmit} isRequired variant='flushed' placeholder='What’s your email address?' 
+									<Box  w={{base:'95%',xl:'300px','2xl':'40rem'}}>
+										<Text color={'#909090'} fontSize={{base:'sm',lg:'lg',xl:'xl','2xl':'2xl'}} >Your Email</Text>
+										<Input disabled={useSubmit} isRequired 
+											variant='flushed' 
+											fontSize={{base:'sm',lg:'lg',xl:'xl','2xl':'2xl'}}
+											placeholder='What’s your email address?' 
 											onChange={formik.handleChange}
 											value={formik.values.email}
 											id='email'
@@ -113,9 +123,9 @@ function Contact() {
 
 								<Stack direction={['column','row']} spacing={3}>
 							
-									<Box w={['95%','300px']}>
-										<Text color={'#909090'} fontSize={'sm'} mb={'15px'}>Service</Text>
-										<Select disabled={useSubmit} isRequired placeholder='What are you interest in?' size='md' borderRadius={'0px'} color={'#90909080'} borderColor={'#90909080'} 
+									<Box  w={{base:'95%',xl:'300px','2xl':'40rem'}}>
+										<Text color={'#909090'}  fontSize={{base:'sm',lg:'lg',xl:'xl','2xl':'2xl'}}  mb={'15px'}>Service</Text>
+										<Select  fontSize={{base:'sm',lg:'lg',xl:'xl','2xl':'2xl'}}   disabled={useSubmit} isRequired placeholder='What are you interest in?' size='md' borderRadius={'0px'} color={'#90909080'} borderColor={'#90909080'} 
 
 											onChange={formik.handleChange}
 											value={formik.values.service}
@@ -129,9 +139,9 @@ function Contact() {
 											<option value='Just wanted ro say hi!'>Just wanted ro say hi!</option>
 										</Select>
 									</Box>
-									<Box w={['95%','300px']}>
-										<Text color={'#909090'} fontSize={'sm'} mb={'15px'}>Your Budget</Text>
-										<Select disabled={useSubmit} isRequired placeholder='What’s your budget?' size='md' color={'#90909080'} borderColor={'#90909080'} borderRadius={'0px'} 
+									<Box  w={{base:'95%',xl:'300px','2xl':'40rem'}}>
+										<Text color={'#909090'}  fontSize={{base:'sm',lg:'lg',xl:'xl','2xl':'2xl'}}   mb={'15px'}>Your Budget</Text>
+										<Select disabled={useSubmit} isRequired placeholder='What’s your budget?'  fontSize={{base:'sm',lg:'lg',xl:'xl','2xl':'2xl'}}   color={'#90909080'} borderColor={'#90909080'} borderRadius={'0px'} 
 											onChange={formik.handleChange}
 											value={formik.values.budget}
 											id='budget'
@@ -147,8 +157,8 @@ function Contact() {
 
 								</Stack>
 
-								<Box  w={['95%','100%']}>
-									<Text color={'#909090'} fontSize={'sm'}>Message</Text>
+								<Box   w={{base:'95%',xl:'100%'}}>
+									<Text color={'#909090'} fontSize={{base:'sm',lg:'lg',xl:'xl','2xl':'2xl'}}>Message</Text>
 									<Input isRequired variant='flushed' placeholder='What’s your message?' 
 										onChange={formik.handleChange}
 										value={formik.values.message}
@@ -156,18 +166,18 @@ function Contact() {
 										name='message'
 										type='message'
 										disabled={useSubmit}
-										
+										fontSize={{base:'sm',lg:'lg',xl:'xl','2xl':'2xl'}}
 									/>
 								</Box>
-								<Flex  w={'100%'} alignItems='center'>
+								<Flex  w={'100%'} alignItems='center' justify={{base:'center', lg:'left'}}>
 									<Button 
 										disabled={useSubmit}
 										isLoading={useSubmit}
 										spinnerPlacement='start'
 										type='submit' w={'200px'} colorScheme='white' borderRadius={'0px'} variant='outline'
-
+										fontSize={{base:'sm',lg:'lg',xl:'xl','2xl':'2xl'}}
 									>
-								Send Message
+									Send Message
 									</Button>
 									<Text color={'#909090'} fontSize={'sm'} ml='10px' >{useSubmitText}</Text>
 								</Flex>

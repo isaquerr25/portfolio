@@ -27,15 +27,15 @@ import ImgJp from '../../images/jps.png';
 function Skills() {
 
 	return (
-		<Flex id='skills'  flexDirection={'column'}   position='relative'  w='100vw' bg='rgba(0, 0, 0, 0.5)'  py='4rem'>
-			<Box position={'absolute'} left={'-200px'}  top={'50px'} zIndex={'5'}>
+		<Flex id='skills'  flexDirection={'column'}   position='relative'  w='100vw' bg='rgba(0, 0, 0, 0.5)'  py={{base:'2rem' ,lg:'4rem'}}>
+			<Box position={'absolute'} left={'-200px'}  top={'50px'} zIndex={'-5'}>
 				<Circle size='500px' bg='radial-gradient(37.26% 37.26% at 50% 50%, rgba(170, 20, 240, 0.31) 0%, rgba(170, 20, 240, 0) 100%)' color='white'/>
 			</Box>
 			<Box position={'absolute'} right={'6rem'}  top={'-1rem'} zIndex={'-5'}>
 				<Circle size='25rem' bg='radial-gradient(37.26% 37.26% at 50% 50%, rgba(170, 20, 240, 0.31) 0%, rgba(170, 20, 240, 0) 100%)' color='white'/>
 			</Box>
 			<Flex flexDirection={['column','row']} w='99vw' justifyContent={['center','space-between']} alignItems='flex-start'>
-				<Flex w={['100%','50vw']} flexDirection='column' justifyContent='space-between' mt={'3rem'}>
+				<Flex w={['100%','50vw']} flexDirection='column' justifyContent='space-between' mt={{base:'0rem',lg:'3rem'}}>
 					<Image 
 						src={ImgSkills} 
 						h={['80px','7vw']}  
@@ -108,7 +108,7 @@ function Skills() {
 					</Flex>
 				</Flex>
 			
-				<Box  display={'flex'} flexDirection='column' alignItems={'center'} justifyContent={'center'} mt='2rem'  w={['100%','40vw']}>
+				<Box  display={'flex'} flexDirection='column' alignItems={'center'} justifyContent={'center'} mt={{base:'0rem',lg:'2rem'}}  w={['100%','40vw']}>
 					<Image src={ImgHead} h={['200px','14vw']} w={['200px','14vw']} mt={'0px'} mb={['50px','5px']} alt='Head' />
 					<Flex flexDirection={'column'} gap={'10px'}>
 						<Flex flexDirection={'column'} gap={'10px'} px='5%'>
