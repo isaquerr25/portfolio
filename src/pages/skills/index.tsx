@@ -20,8 +20,11 @@ import ImgDocker from '../../images/docker.png';
 import ImgPost from '../../images/postgress.png';
 import ImgApollo from '../../images/apollo.png';
 import ImgBr from '../../images/br.png';
+import ImgJpSS from '../../images/jp.png';
 import ImgEua from '../../images/eur.png';
+import ImgEuaeua from '../../images/eua.png';
 import ImgJp from '../../images/jps.png';
+import CircleBr from '../../images/circleBr.png';
 
 
 function Skills() {
@@ -151,11 +154,11 @@ function Skills() {
 								<Text color={'#EDFF7B'} fontSize={['lg','2vw']} fontWeight='bold'>
 									LANGUAGES
 								</Text>
-								<Flex flexDirection={'row'} justifyContent={'space-between'} w={'100%'}>
+								<Flex flexDirection={'row'} justifyContent={'center'} gap='3rem' w={'100%'}>
 								
-									<Image src={ImgBr} h={['200px','12vw']} />
-									<Image src={ImgEua} h={['200px','12vw']} />
-									<Image src={ImgJp} h={['200px','12vw']} />
+									<Image src={CircleBr}  h={['70px','7vw']} />
+									<Image src={ImgEuaeua} h={['70px','7vw']} />
+									<Image src={ImgJpSS}   h={['70px','7vw']} />
                             
 								</Flex>
 								<Image src={ImgUnderLine} h={'5px'} w={'100%'}/>
