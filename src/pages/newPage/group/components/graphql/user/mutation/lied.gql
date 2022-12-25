@@ -1,0 +1,30 @@
+mutation LiedWithProductCreate(
+	$email: String!
+	$name: String!
+	$originLied: String!
+	$phone: String
+	$productName: String!
+	$productConjunct: String!
+	$productCampaign: String!
+	$productNiche: String!
+	$productOriginClient: String!
+) {
+	liedWithProductCreate(
+		data: {
+			email: $email
+			name: $name
+			originLied: $originLied
+			phone: $phone
+			product: {
+				name: $productName
+				conjunct: $productConjunct
+				campaign: $productCampaign
+				niche: $productNiche
+				originClient: $productOriginClient
+			}
+		}
+	) {
+		field
+		message
+	}
+}
