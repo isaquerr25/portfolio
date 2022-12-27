@@ -8,10 +8,13 @@ import { Container } from "@mui/material";
 import Footer from "./components/Footer";
 import FooterMenu from "./components/FooterMenu";
 import { displayOnDesktop } from "./themes/commonStyles";
+import React from "react";
+import ReactDOM from "react-dom/client";
 
 function App() {
 	return (
 		<>
+			<CssBaseline />
 			<Box
 				sx={{
 					display: "flex",
@@ -19,12 +22,10 @@ function App() {
 					height: "100vh",
 				}}
 			>
-				dasdasd
-				{/*<Box>
+				<Box>
 					<Header />
-					{/*<OptionsTab />
+					<OptionsTab />
 				</Box>
-				
 				<Box
 					sx={{
 						display: "flex",
@@ -43,7 +44,7 @@ function App() {
 				</Box>
 				<Box sx={displayOnDesktop}>
 					<Footer />
-				</Box>*/}
+				</Box>
 			</Box>
 		</>
 	);

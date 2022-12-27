@@ -37,6 +37,10 @@ import QueimaaDeGordura from "./pages/newPage/product/queimaaDeGordura";
 import QueimaaDeGorduraVideo from "./pages/newPage/product/queimaaDeGorduraVideo";
 import ProFitness from "./pages/newPage/product/proFitness";
 import FirstSeller from "./pages/newPage/product/FirstSeller";
+import { Netflix } from "./pages/newPage/netflix";
+import { Dropbox } from "./pages/newPage/dropbox";
+import { TopSection } from "./pages/newPage/group/carRen/app/containers/HomePage/topSection";
+import { Airbnb } from "./pages/newPage/airbnb";
 
 ReactDOM.render(
 	<BrowserRouter>
@@ -80,6 +84,11 @@ ReactDOM.render(
 					<Route path="/seller/proFitness" element={<ProFitness />} />
 
 					<Route path="/firstSeller" element={<FirstSeller />} />
+
+					<Route path="/netflix" element={<Netflix />} />
+					<Route path="/dropbox" element={<Dropbox />} />
+					<Route path="/topSection" element={<TopSection />} />
+					<Route path="/airbnb" element={<Airbnb />} />
 				</Routes>
 			</ChakraProvider>
 		</React.StrictMode>

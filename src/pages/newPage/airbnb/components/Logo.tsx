@@ -9,7 +9,7 @@ export default function Logo() {
 	return (
 		<Box sx={flexCenter}>
 			<FaAirbnb size={40} color={pink[500]} />
-			<text className="text-[20px] font-[800] ml-[1rem]">airBnB</text>
+			<text className=" ml-[1rem] text-[20px] font-[800]">airBnB</text>
 		</Box>
 	);
 }

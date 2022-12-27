@@ -10,6 +10,7 @@ import {
 import LocationSearch from "./LocationSearch";
 import ProfileSettings from "./ProfileSettings";
 import MobileSearch from "./MobileSearch";
+import ReactDOM from "react-dom/client";
 
 const Header = () => {
 	return (
@@ -20,7 +21,7 @@ const Header = () => {
 				borderBottom: "1px solid #ddd",
 			}}
 		>
-			<Box maxWidth="xl">
+			<Container maxWidth="xl">
 				<Box
 					sx={{
 						...flexBetweenCenter,
@@ -28,7 +29,7 @@ const Header = () => {
 						px: 4,
 					}}
 				>
-					{/*<Box sx={displayOnDesktop}>
+					<Box sx={displayOnDesktop}>
 						<Logo />
 					</Box>
 					<Box sx={displayOnDesktop}>
@@ -43,11 +44,10 @@ const Header = () => {
 						}}
 					>
 						<MobileSearch />
-					</Box>*/}
+					</Box>
 				</Box>
-			</Box>
+			</Container>
 		</Box>
 	);
 };
-
 export default Header;

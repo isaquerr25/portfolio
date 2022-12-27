@@ -1,7 +1,9 @@
 import { Box, Container, Tabs, Tab, tabsClasses, Button } from "@mui/material";
-import { locationsTab } from "../data/mock-data";
+
 import React, { useState } from "react";
 import { FaFilter } from "react-icons/fa";
+import { locationsTab } from "../data/mock-data";
+import ReactDOM from "react-dom/client";
 
 const OptionsTab = () => {
 	const [value, setValue] = useState(0);
@@ -20,6 +22,7 @@ const OptionsTab = () => {
 					mb: 2,
 				}}
 			>
+				{/*
 				<Tabs
 					scrollButtons
 					sx={{
@@ -31,7 +34,7 @@ const OptionsTab = () => {
 					onChange={handleChange}
 					variant="scrollable"
 				>
-					{locationsTab.map((tab) => {
+					{locationsTab.map((tab: any) => {
 						return (
 							<Tab
 								key={tab.id}
@@ -41,6 +44,7 @@ const OptionsTab = () => {
 						);
 					})}
 				</Tabs>
+                 */}
 				<Button
 					sx={{
 						display: { xs: "none", md: "block" },

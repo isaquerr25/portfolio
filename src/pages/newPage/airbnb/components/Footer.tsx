@@ -9,8 +9,8 @@ import Container from "@mui/material/Container";
 import { BsGlobe } from "react-icons/bs";
 import { IoChevronUpOutline } from "react-icons/io5";
 import {
-	fullWidthFlex,
 	flexBetweenCenter,
+	fullWidthFlex,
 	justifyCenter,
 } from "../themes/commonStyles";
 
