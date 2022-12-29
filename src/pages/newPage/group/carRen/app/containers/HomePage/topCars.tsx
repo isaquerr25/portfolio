@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 
-import { ICar } from "../../../typings/car";
 import { Car } from "../../components/car";
 
 const TopCarsContainer = `
@@ -40,7 +39,7 @@ const CarsContainer = `
 `;
 
 export function TopCars() {
-	const testCar: ICar = {
+	const testCar: any = {
 		name: "Audi S3 Car",
 		mileage: "10k",
 		thumbnailSrc:
@@ -51,7 +50,7 @@ export function TopCars() {
 		gas: "Petrol",
 	};
 
-	const testCar2: ICar = {
+	const testCar2: any = {
 		name: "HONDA cITY 5 Seater Car",
 		mileage: "20k",
 		thumbnailSrc:

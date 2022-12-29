@@ -11,8 +11,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { ICar } from "../../../typings/car";
 import { Button } from "../button";
 
-interface ICarProps extends ICar {}
-
 const CarContainer = `
 	w-[16.5em] min-h-[21em] max-h-[25em] shadow-xl
 	
