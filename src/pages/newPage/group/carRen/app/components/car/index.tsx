@@ -131,7 +131,7 @@ const RentButton = styled(Button)`
   `}
 `;
 
-export function Car(props: ICarProps) {
+export function Car(props: any) {
 	const {
 		name,
 		thumbnailSrc,
