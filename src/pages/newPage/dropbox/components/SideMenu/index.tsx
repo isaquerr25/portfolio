@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 
 import { Container } from "./styles";
-import { Box } from "@chakra-ui/react";
 
 declare global {
 	interface Window {
@@ -9,9 +8,13 @@ declare global {
 	}
 }
 
+interface Props {
+	children: React.ReactNode;
+}
+
 const scrollThreshold = 300;
 
-const SideMenu: React.FC = ({ children }: { children: any }) => {
+const SideMenu: React.FC<Props> = ({ children }) => {
 	const [isActive, setIsActive] = useState(false);
 	const [scrollY, setScrollY] = useState(0);
 
@@ -39,7 +42,7 @@ const SideMenu: React.FC = ({ children }: { children: any }) => {
 
 	window.toggleActiveMenu = toggleActiveMenu;
 
-	return <Box className={className}>{children}</Box>;
+	return <Container className={className}>{children}</Container>;
 };
 
 export default SideMenu;

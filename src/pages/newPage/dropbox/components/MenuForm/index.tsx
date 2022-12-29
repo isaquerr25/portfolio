@@ -20,7 +20,7 @@ const MenuForm: React.FC = () => {
 				</button>
 			</Navigation>
 
-			<Form>
+			<Form className="text-[black]">
 				<span className="title text-[black]">Registre-se</span>
 				<span className="subtitle text-[black]">
 					preencha o formulário abaixo

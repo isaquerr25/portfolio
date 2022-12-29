@@ -32,15 +32,15 @@ import {
 import All from "./pages/all";
 import HomeStayOne from "./pages/newPage/group/stayOne/_home";
 import AppCar from "./pages/newPage/group/carRen/AppCar";
-import AirBnbApp from "./pages/newPage/group/airbnb/App.js";
 import QueimaaDeGordura from "./pages/newPage/product/queimaaDeGordura";
 import QueimaaDeGorduraVideo from "./pages/newPage/product/queimaaDeGorduraVideo";
 import ProFitness from "./pages/newPage/product/proFitness";
 import FirstSeller from "./pages/newPage/product/FirstSeller";
 import { Netflix } from "./pages/newPage/netflix";
-import { Dropbox } from "./pages/newPage/dropbox";
+
 import { TopSection } from "./pages/newPage/group/carRen/app/containers/HomePage/topSection";
 import { Airbnb } from "./pages/newPage/airbnb";
+import { DropBox } from "./pages/newPage/dropbox";
 
 ReactDOM.render(
 	<BrowserRouter>
@@ -53,7 +53,7 @@ ReactDOM.render(
 				/>
 
 				<Routes>
-					<Route path="/" element={<Home />}>
+					<Route path="/" element={<All />}>
 						<Route index element={<All />} />
 					</Route>
 					<Route path="/home" element={<Home />} />
@@ -70,8 +70,6 @@ ReactDOM.render(
 						path="/atayOne/homeStayOne"
 						element={<HomeStayOne />}
 					/>
-					<Route path="/appCar" element={<AppCar />} />
-					<Route path="/airBnbApp" element={<AirBnbApp />} />
 
 					<Route
 						path="/QueimaaDeGordura"
@@ -82,13 +80,21 @@ ReactDOM.render(
 						element={<QueimaaDeGorduraVideo />}
 					/>
 					<Route path="/seller/proFitness" element={<ProFitness />} />
-
 					<Route path="/firstSeller" element={<FirstSeller />} />
 
+					<Route path="/appCar" element={<AppCar />} />
 					<Route path="/netflix" element={<Netflix />} />
-					<Route path="/dropbox" element={<Dropbox />} />
-					<Route path="/topSection" element={<TopSection />} />
+					<Route path="/dropbox" element={<DropBox />} />
 					<Route path="/airbnb" element={<Airbnb />} />
+
+					<Route
+						path="*"
+						element={
+							<div className="text-[10rem] text-black">
+								nada aqui
+							</div>
+						}
+					/>
 				</Routes>
 			</ChakraProvider>
 		</React.StrictMode>

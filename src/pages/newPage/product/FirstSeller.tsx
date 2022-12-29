@@ -119,7 +119,7 @@ function FirstSeller() {
 					className="w-[15rem] mt-[4rem]"
 					alt=""
 				/>
-				<text className="text-[white]  text-[1.2rem]  md:text-[2rem] w-[80vw] md:w-[45rem] text-center mt-[1.5rem] leading-[1.5rem] md:leading-0 xl:leading-[2rem]">
+				<text className="text-[white]  text-[1.2rem]  md:text-[2rem] w-[80vw] md:w-[45rem] text-center mt-[1.5rem] md:leading-0 md:leading-[2rem] xl:leading-[2rem]">
 					<span className=" font-[800] ">
 						DESCUBRA COMO COMEÇAR DO ZERO{" "}
 					</span>{" "}
@@ -129,7 +129,7 @@ function FirstSeller() {
 						VENDA EM 24 HORAS!
 					</span>
 				</text>
-				<text className="text-[white]  text-[1.2rem]  md:text-[1.8rem] w-[80vw] md:w-[53rem] text-center mt-[1rem] mb-[1rem] leading-[1.5rem] md:leading-0 xl:leading-[2rem]">
+				<text className="text-[white]  text-[1.2rem]  md:text-[1.8rem] w-[80vw] xl:w-[53rem] text-center mt-[1rem] mb-[1rem] leading-[1.5rem] md:leading-0 md:leading-[2rem] xl:leading-[2rem]">
 					<span className=" font-[600] ">
 						{" "}
 						MAIS DE 300 MIL INSCRITOS NO YOUTUBE, 8 MIL ALUNOS PELO
@@ -155,7 +155,7 @@ function FirstSeller() {
 						Aqui está tudo o que você vai receber no{" "}
 						<span className="text-[#EEA528] text-[800]">P24</span>
 					</text>
-					<div className="grid  grid-cols-1 md:grid-cols-2 w-[70rem] py-[1rem] px-[1rem] justify-center items-center mx-[ ] ">
+					<div className="grid  grid-cols-1 xl:grid-cols-2 w-[70rem] py-[1rem] px-[1rem] justify-center items-center mx-[ ] ">
 						{[
 							{
 								title: "PRIMEIRA VENDA EM 30 DIAS",
@@ -227,7 +227,7 @@ function FirstSeller() {
 				}
 			>
 				<div className="flex flex-col items-center justify-center">
-					<text className="font-[400] text-[1.8rem]  md:text-[2.5rem] leading-[1.8rem] md:leading-0">
+					<text className="font-[400] text-[1.8rem]  md:text-[2.5rem] leading-[1.8rem] md:leading-[2rem] xl:leading-[2rem] ">
 						{" "}
 						LEIA PARA POUPAR {(width ?? 10) < 1100 && (
 							<br />
@@ -283,7 +283,7 @@ function FirstSeller() {
 						{" "}
 						Prazer Caio M.{" "}
 					</text>
-					<text className="z-[2] text-[white] w-[85vw] md:w-[30rem] text-[1.4rem] md:text-[1.1rem] leading-[1.6rem] md:leading-0 mt-[1rem] md:mt-0">
+					<text className="z-[2] text-[white] w-[85vw] md:w-[20rem] xl:w-[30rem] text-[1.4rem] md:text-[1.1rem] leading-[1.6rem] md:leading-0 mt-[1rem] md:mt-0">
 						{" "}
 						Especialista no mercado digital, iniciei como afiliado
 						através de grupos pelo Facebook.
@@ -304,7 +304,7 @@ function FirstSeller() {
 					</text>
 				</div>
 			</div>
-			<div className=" flex flex-col md:flex-row bg-[#EEA528] justify-center items-center py-[1rem] relative w-[100vw] xl:w-[auto] px-[0vw] 52xl:px-[28vw] h-[17rem] md:h-[12rem] ">
+			<div className=" flex flex-col xl:flex-row bg-[#EEA528] justify-center items-center py-[1rem] relative w-[100vw] xl:w-[auto] px-[0vw] 52xl:px-[28vw] h-[17rem] md:h-[18rem] xl:h-[12rem] ">
 				<img
 					src="/afristsset-6-1.png"
 					className=" h-[6rem]  mx-[auto] "
@@ -390,7 +390,7 @@ function FirstSeller() {
 				<>
 					<div className="navigation-wrapper w-[15rem] md:w-[58rem] mx-[auto] relative">
 						<div
-							ref={(width ?? 10) > 940 ? sliderRef : sliderRefMin}
+							ref={(width ?? 10) > 800 ? sliderRef : sliderRefMin}
 							className="keen-slider !gap-x-0 justify-start "
 						>
 							{[
@@ -461,7 +461,7 @@ function FirstSeller() {
 					</button>
 				</div>
 			</div>
-			<div className=" flex flex-col md:flex-row bg-[#EEA528] justify-center items-center py-[1rem] relative md:px-[25vw] h-[22rem] md:h-[11rem]">
+			<div className=" flex flex-col xl:flex-row bg-[#EEA528] justify-center items-center py-[1rem] relative md:px-[25vw] h-[22rem] md:h-[18rem] xl:h-[11rem]">
 				<div className="h-[3rem] w-[100vw] absolute top-[-1.5rem] bg-[#EEA528] rotate-[1deg]" />
 				<img
 					src="/fristasset-12-1.png"
