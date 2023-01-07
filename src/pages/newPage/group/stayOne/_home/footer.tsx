@@ -21,9 +21,9 @@ export const Footer = () => {
 						collect items in a blockchain.
 					</p>
 				</div>
-				<div className="flex-1"></div>
+				<div className="md:flex-1"></div>
 
-				<div className="flex flex-col w-full md:w-3/12 min-h-[250px]">
+				<div className="flex flex-col w-full md:w-3/12 min-h-[120px] md:min-h-[250px]">
 					<strong className="mb-4 text-xl text-gray-900">
 						Subscribe to our newsletter
 					</strong>
@@ -39,7 +39,7 @@ export const Footer = () => {
 							More Events
 						</button>
 					</div>
-					<div className="flex-1"></div>
+					<div className="md:flex-1"></div>
 					<strong className="hidden mb-4 text-gray-900 md:block text-gl">
 						Follow us
 					</strong>
@@ -50,7 +50,7 @@ export const Footer = () => {
 				&copy; {new Date().getFullYear()} with{" "}
 				<span className="px-2 font-bold text-red-500">LOVE</span> by
 				Townland
-				<div className="flex-1"></div>
+				<div className="md:lex-1"></div>
 			</div>
 		</footer>
 	);

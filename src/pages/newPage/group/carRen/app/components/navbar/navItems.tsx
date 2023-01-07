@@ -11,7 +11,7 @@ const ListContainer = `
 	${`
     flex
     list-none
-	text-[black]
+	!text-[white]
   `}
 `;
 
@@ -19,7 +19,7 @@ const NavItem = (menu?: boolean) => `
 	${`
     text-xs
     md:text-base
-    text-[black]
+    text-[white]
     font-medium
     mr-1
     md:mr-5

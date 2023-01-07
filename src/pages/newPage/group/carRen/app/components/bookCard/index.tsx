@@ -110,23 +110,21 @@ export function BookCard() {
 				{isStartCalendarOpen && (
 					<Calendar
 						className={`
-        absolute;
-        top-[2em]
-        left[2em]
-        max-w-[none];
-        use-select: none;
-      
-        ${({ offset }: any) =>
-			offset &&
-			css`
-				left-[-2em]
-			`}
-      
-        @media (min-width: ${SCREENS.md}) {
-          top-[3.5em]
-          left-[-2em]
-        }
-      `}
+					absolute
+					top-[2em]
+					left-[1rem]
+					!max-w-[80vw]
+					!w-[20rem]
+					text-[black]
+					${({ offset }: any) =>
+						offset &&
+						css`
+								left[2em];
+							`}
+						md:top: 3.5em;
+						md:left: -2em;
+	
+`}
 						value={startDate}
 						onChange={setStartDate as any}
 					/>
@@ -148,25 +146,24 @@ export function BookCard() {
 				{isReturnCalendarOpen && (
 					<Calendar
 						className={`
-    					absolute
-          top-[2em]
-          left-[-2em]
-          max-w-[one]
-          use-select-[none]
-        
-          ${({ offset }: any) =>
-				offset &&
-				css`
-					left[2em];
-				`}
-        
-          @media (min-width: ${SCREENS.md}) {
-            top: 3.5em;
-            left: -2em;
-          }
+							absolute
+							top-[2em]
+							left-[-5rem]
+							!max-w-[80vw]
+							!w-[20rem]
+							text-[black]
+							${({ offset }: any) =>
+								offset &&
+								css`
+										left[2em];
+									`}
+								md:top: 3.5em;
+								md:left: -2em;
+			
         `}
 						value={returnDate}
 						onChange={setReturnDate as any}
+						showDoubleView={false}
 					/>
 				)}
 			</div>
